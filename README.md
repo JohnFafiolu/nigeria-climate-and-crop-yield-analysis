@@ -129,19 +129,25 @@ nigeria-climate-and-crop-yield-analysis/
 ├── README.md
 ├── Ibrahim Project.Rproj
 │
-├── data/
-│   ├── raw/
-│   └── processed/
+data/
+└── raw/
+|   └── Corn, Cassava, PPT and rainfall 1990 t0 2024 .csv
 │
 ├── R/
-│   ├── 01_data_preparation.R
-│   ├── 02_descriptive_statistics.R
-│   ├── 03_stationarity_tests.R
-│   ├── 04_ardl_modelling.R
-│   ├── 05_model_diagnostics.R
-│   ├── 06_granger_causality.R
-│   └── 07_forecasting.R
+│   ├── 01_climate_crop_yield_analysis.R
 │
 └── outputs/
     ├── figures/
     └── tables/
+```
+## 10. Reproducibility
+
+To reproduce the analysis:
+
+1. Download this repository.
+2. Open RStudio
+3. Ensure the required R packages are installed.
+4. Confirm that the dataset is available in `data/raw/`.
+5. Open and run `R/01_climate_crop_yield_analysis.R`.
+
+The analysis uses R and the packages documented in this repository.
